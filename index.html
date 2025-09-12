@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuskript Gotisch</title>
+</head>
+
+<body>
+  <style>
+    @font-face {
+      font-family: 'Manuskript Gotisch';
+      src: url('./ManuskriptGotisch.ttf') format('truetype');
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+
+    :root {
+      font-size: 28em;
+      font-family: "Manuskript Gotisch";
+      color-scheme: dark;
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: contents;
+    }
+
+    main {
+      padding: 4px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      font-family: inherit;
+      font-size: inherit;
+      background: none;
+      border: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+  <main>
+    <input value="L" />
+  </main>
+</body>
+
+</html>
