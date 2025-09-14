@@ -1,1 +1,17 @@
-Font from [1001fonts](https://www.1001fonts.com/manuskript-gothisch-font.html)
+# L's Fonts
+
+This repository collects fonts that are the same as the logos of characters related to Wammy's House.
+
+## Fonts
+
+[Diploma Regular 5](https://www.fontmirror.com/diploma)
+
+Author: Unknown
+
+License: Free License
+
+[Diploma](https://www.cufonfonts.com/font/diploma)
+
+Author: Unknown
+
+License: Unknown

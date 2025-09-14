@@ -2,26 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manuskript Gotisch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L's Fonts</title>
 </head>
 
 <body>
   <style>
     @font-face {
-      font-family: 'Manuskript Gotisch';
-      src: url('./ManuskriptGotisch.ttf') format('truetype');
+      font-family: "Diploma";
+      src: url("./Diploma.ttf") format("truetype");
       font-style: normal;
       font-weight: 400;
-      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "DiplomaRegular5";
+      src: url("./ManuskriptGotisch.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
     }
 
     :root {
-      font-size: 28em;
-      font-family: "Manuskript Gotisch";
+      font-family: "DiplomaRegular5";
       color-scheme: dark;
       height: 100%;
+      background: black;
+      color: white;
     }
 
     * {
@@ -33,25 +40,53 @@
     }
 
     main {
-      padding: 4px;
       height: 100%;
       display: flex;
       align-items: center;
     }
 
+    section {
+      position: relative;
+      margin: 4px;
+    }
+
     input {
       font-family: inherit;
-      font-size: inherit;
       background: none;
       border: 0;
       padding: 0;
       width: 100%;
       text-align: center;
+      font-size: 28em;
+    }
+
+    select {
+      font-size: 1.5em;
+      left: 0;
+      top: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    input:focus+select,
+    select:hover {
+      visibility: visible;
     }
   </style>
   <main>
-    <input value="L" />
+    <section>
+      <input value="L" />
+      <select>
+        <option selected value="DiplomaRegular5">Diploma Regular 5</option>
+        <option value="Diploma">Diploma</option>
+      </select>
+    </section>
   </main>
+  <script>
+    document.querySelector("select").addEventListener("change", (e) => {
+      document.documentElement.style.fontFamily = e.target.value;
+    });
+  </script>
 </body>
 
 </html>
