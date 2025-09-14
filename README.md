@@ -15,3 +15,9 @@ License: Free License
 Author: Unknown
 
 License: Unknown
+
+[ClerestorySSK](https://fonts2u.com/clerestoryssk.font)
+
+Author: Southern Software, Inc
+
+License: Unknown
